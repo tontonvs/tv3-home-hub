@@ -22,6 +22,15 @@ allprojects {
         google()
         mavenCentral()
     }
+
+    // RESOLUTION STRATEGY TO FIX DUPLICATE KOTLIN CLASSES
+    configurations.all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.20'
+        }
+    }
 }
 
 task clean(type: Delete) {
