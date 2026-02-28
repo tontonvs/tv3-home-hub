@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TV3 Home Hub</string>
+    <string name="title_activity_main">TV3 Home Hub</string>
+    <string name="package_name">com.tv3.homehub</string>
+    <string name="custom_url_scheme">com.tv3.homehub</string>
+</resources>
